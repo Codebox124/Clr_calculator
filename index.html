@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h1><img src="logo.jpeg" alt="Company Logo"></h1>
+  <div id="calculator">
+    <h2>CLR Calculator</h2>
+    <div class="input-container">
+      <label for="assessedValueInput">Assessed Value:</label>
+      <input type="number" id="assessedValueInput" placeholder="Assessed Value">
+    </div>
+    <div class="input-container">
+      <label for="clrRateInput">CLR Rate (%):</label>
+      <input type="number" id="clrRateInput" placeholder="CLR Rate">
+    </div>
+    <button id="calculateClrBtn">Calculate CLR</button>
+    <p id="clrResult"></p>
+
+    <h2>Transfer Tax Calculator</h2>
+    <div class="input-container">
+      <label for="salesAmountInput">Sales Amount:</label>
+      <input type="number" id="salesAmountInput" placeholder="Sales Amount">
+    </div>
+    <div class="input-container">
+      <label for="transferTaxRateInput">Transfer Tax Rate (%):</label>
+      <input type="number" id="transferTaxRateInput" placeholder="Transfer Tax Rate">
+    </div>
+    <button id="calculateTransferTaxBtn">Calculate Transfer Tax</button>
+    <p id="transferTaxResult"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
