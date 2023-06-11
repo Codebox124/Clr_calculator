@@ -17,13 +17,18 @@ body {
     margin: 0 auto;
     max-width: 600px;
   }
-  
+
   h2 {
     margin-top: 20px;
+    
   }
   
   .input-container {
     margin-bottom: 10px;
+  }
+  .countries-list{
+    font-size: 20px;
+    font-weight: 800;
   }
   
   label {
@@ -41,7 +46,7 @@ body {
   
   button {
     padding: 10px 20px;
-    background-color: #4CAF50;
+    background-color: rgb(78, 78, 214);
     color: #fff;
     border: none;
     border-radius: 4px;

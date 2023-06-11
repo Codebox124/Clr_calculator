@@ -2,10 +2,36 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="style.css">
+  
 </head>
 <body>
   <h1><img src="logo.jpeg" alt="Company Logo"></h1>
   <div id="calculator">
+    <div class="input-container">
+        <label class="countries-list" for="countrySelect">Select Country:</label>
+        <select id="countrySelect">
+          <option value="">Select a country</option>
+          <option value="Adams County">Adams County</option>
+          <option value="Allegheny County">Allegheny County</option>
+          <option value="Bellevue Borough">Bellevue Borough</option>
+          <option value="Bethel Park Municipality">Bethel Park Municipality</option>
+          <option value="Greentree Borough">Greentree Borough</option>
+          <option value="Hampton Township">Hampton Township</option>
+          <option value="McCandles Township">McCandles Township</option>
+          <option value="Mckeesport City">Mckeesport City</option>
+          <option value="Monroeville Municipality">Monroeville Municipality</option>
+          <option value="Mt. Lebanon Municipality">Mt. Lebanon Municipality</option>
+          <option value="Mt. Oliver Borough">Mt. Oliver Borough</option>
+          <option value="O'hara Township">O'hara Township</option>
+          <option value="Penn Hills Municipality">Penn Hills Municipality</option>
+          <option value="Pine Township">Pine Township</option>
+          <option value="Pittsburgh, City Of">Pittsburgh, City Of</option>
+          <option value="Upper St. Clair Township">Upper St. Clair Township</option>
+          <option value="West Deer Township">West Deer Township</option>
+          <option value="Whitehall Borough">Whitehall Borough</option>
+          <!-- Add more options for other countries here -->
+        </select>
+      </div>
     <h2>CLR Calculator</h2>
     <div class="input-container">
       <label for="assessedValueInput">Assessed Value:</label>
@@ -30,6 +56,7 @@
     <button id="calculateTransferTaxBtn">Calculate Transfer Tax</button>
     <p id="transferTaxResult"></p>
   </div>
+  
 
   <script src="script.js"></script>
 </body>
