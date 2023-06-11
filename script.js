@@ -8,18 +8,33 @@ document.addEventListener('DOMContentLoaded', function() {
   
   function calculateCLR() {
     var assessedValueInput = document.getElementById('assessedValueInput');
-    var clrRateInput = document.getElementById('clrRateInput');
+    var countySelect = document.getElementById('countySelect');
     var clrResult = document.getElementById('clrResult');
   
     var assessedValue = parseFloat(assessedValueInput.value);
-    var clrRate = parseFloat(clrRateInput.value);
+    var clrFactor = getCLRFactor(countySelect.value);
   
-    if (isNaN(assessedValue) || isNaN(clrRate)) {
+    if (isNaN(assessedValue) || isNaN(clrFactor)) {
       clrResult.textContent = 'Please enter valid numbers.';
     } else {
-      var clr = (assessedValue * clrRate) / 100;
+      var clr = clrFactor * assessedValue;
       clrResult.textContent = 'CLR: $' + clr.toFixed(2);
     }
+  }
+  
+  function getCLRFactor(county) {
+    // Implement the logic to retrieve the CLR factor based on the selected county
+    // You can use conditional statements or a lookup table
+  
+    // Example lookup table
+    var clrFactors = {
+      'Adams County': 1.14 ,
+      'Allegheny County': 1.57,
+      
+      // Add CLR factors for other counties
+    };
+  
+    return clrFactors[county] || 0; // Return 0 if CLR factor is not found for the county
   }
   
   function calculateTransferTax() {
