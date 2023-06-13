@@ -100,18 +100,3 @@ function getCLRFactor(county) {
   return clrFactors[county] || 0; // Return 0 if CLR factor is not found for the county
 }
 
-function calculateTransferTax() {
-  var salesAmountInput = document.getElementById("salesAmountInput");
-  var transferTaxRateInput = document.getElementById("transferTaxRateInput");
-  var transferTaxResult = document.getElementById("transferTaxResult");
-
-  var salesAmount = parseFloat(salesAmountInput.value);
-  var transferTaxRate = parseFloat(transferTaxRateInput.value);
-
-  if (isNaN(salesAmount) || isNaN(transferTaxRate)) {
-    transferTaxResult.textContent = "Please enter valid numbers.";
-  } else {
-    var transferTax = (salesAmount * transferTaxRate) / 100;
-    transferTaxResult.textContent = "Transfer Tax: $" + transferTax.toFixed(2);
-  }
-}
