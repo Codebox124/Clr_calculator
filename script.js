@@ -17,7 +17,13 @@ function calculateCLR() {
     clrResult.textContent = "Please enter valid numbers.";
   } else {
     var clr = clrFactor * assessedValue;
-    clrResult.textContent = "CLR: $" + clr.toFixed(2);
+    var clrFormatted = clr.toLocaleString(undefined, {
+      style: "currency",
+      currency: "USD",
+    });
+    
+    clrResult.textContent = "CLR: " + clrFormatted;
+    
   }
 }
 

@@ -156,7 +156,13 @@ function calculateTransferTax() {
     transferTaxResult.textContent = "Please enter valid numbers.";
   } else {
     var transferTax = (salesAmount * transferTaxRate) / 100;
-    transferTaxResult.textContent = "Transfer Tax: $" + transferTax.toFixed(2);
+var transferTaxFormatted = transferTax.toLocaleString(undefined, {
+  style: "currency",
+  currency: "USD",
+});
+
+transferTaxResult.textContent = "Transfer Tax: " + transferTaxFormatted;
+
   }
 }
 function getTaxFactor(tax) {
