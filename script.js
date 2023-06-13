@@ -2,10 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var calculateClrBtn = document.getElementById("calculateClrBtn");
   calculateClrBtn.addEventListener("click", calculateCLR);
 
-  var calculateTransferTaxBtn = document.getElementById(
-    "calculateTransferTaxBtn"
-  );
-  calculateTransferTaxBtn.addEventListener("click", calculateTransferTax);
+
 });
 
 function calculateCLR() {
