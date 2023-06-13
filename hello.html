@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <div id="calculator">
+  <div class ="calculator">
     <h2>Transfer Tax Calculator</h2>
     <div class="input-container">
       <label for="salesAmountInput">Sales Amount:</label>
@@ -21,6 +21,35 @@
     <button id="calculateTransferTaxBtn">Calculate Transfer Tax</button>
     <p id="transferTaxResult"></p>
   </div>
- <script src="script.js"></script>
+ <script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+
+
+  var calculateTransferTaxBtn = document.getElementById(
+    "calculateTransferTaxBtn"
+  );
+  calculateTransferTaxBtn.addEventListener("click", calculateTransferTax);
+});
+
+
+
+function calculateTransferTax() {
+  var salesAmountInput = document.getElementById("salesAmountInput");
+  var transferTaxRateInput = document.getElementById("transferTaxRateInput");
+  var transferTaxResult = document.getElementById("transferTaxResult");
+
+  var salesAmount = parseFloat(salesAmountInput.value);
+  var transferTaxRate = parseFloat(transferTaxRateInput.value);
+
+  if (isNaN(salesAmount) || isNaN(transferTaxRate)) {
+    transferTaxResult.textContent = "Please enter valid numbers.";
+  } else {
+    var transferTax = (salesAmount * transferTaxRate) / 100;
+    transferTaxResult.textContent = "Transfer Tax: $" + transferTax.toFixed(2);
+  }
+}
+
+ </script>
 </body>
 </html>
