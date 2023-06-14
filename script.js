@@ -40,10 +40,10 @@ function getCLRFactor(county) {
    ' Bedford': 1.39,
     'Franklin': 10.53,
    ' Philadelphia1': 1.08,
-
+   'Montour': 1.81,
     'Berks': 2.22,
     'Fulton': 3.76,
-
+    'Elk': 3.98,
     'Philadelphia1': 1.0,
     'Blair': 1.16,
     " Greene": 2.19,
@@ -96,6 +96,16 @@ function getCLRFactor(county) {
    ' Delaware': 1.37,
    ' Montgomery': 2.53,
     'York': 1.52,
+    'Erie': 1.41,
+    'Northampton': 4.61,
+    'Fayette': 1.93,
+    'Northumberland': 8.20,
+    'Forest': 6.85,
+    'Perry': 1.41,
+    'Franklin': 10.53, 
+
+    'Fulton': 3.76,
+    'Philadelphia2': 1.00,
 
     // Add CLR factors for other counties
   };
