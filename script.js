@@ -35,7 +35,7 @@ function getCLRFactor(county) {
   var clrFactors = {
     "Adams County": 1.14,
     "Allegheny County": 1.57,
-    "Armstrong ": 2.46,
+    "Armstrong": 2.46,
     'Beaver': 6.76,
    ' Bedford': 1.39,
     'Franklin': 10.53,
@@ -88,7 +88,7 @@ function getCLRFactor(county) {
    ' Mercer': 6.99,
     'Wayne': 1.0,
     'Cumberland': 1.17,
-   ' Mifflin': 3.51,
+   'Mifflin': 3.51,
     'Westmoreland': 9.09,
    ' Dauphin': 1.91,
     'Monroe': 1.65,
